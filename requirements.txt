@@ -1,0 +1,5 @@
+# For numerical operations and the neural network
+numpy
+
+# For natural language processing tasks (tokenizing, stemming)
+nltk
