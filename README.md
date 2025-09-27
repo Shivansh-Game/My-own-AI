@@ -60,4 +60,30 @@ Follow these instructions to get a local copy up and running.
     .\venv\Scripts\activate
 
     # For macOS/Linux
-    python3 -m venv
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+3.  **Install the required dependencies:**
+    ```sh
+    pip install -r requirements.txt
+    ```
+4.  **Download NLTK data:**
+    * Run Python in your terminal: `python`
+    * In the Python interpreter, run the following:
+        ```python
+        import nltk
+        nltk.download('punkt')
+        exit()
+        ```
+5.  **Train the model:**
+    ```sh
+    python train.py
+    ```
+    This will create a `trained_model.npz` file containing the trained weights and biases.
+
+6.  **Run the chatbot:**
+    ```sh
+    python chat.py
+    ```
+    You can now chat with the bot in your terminal! Type `quit` to exit.
+
