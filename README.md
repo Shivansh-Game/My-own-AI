@@ -6,13 +6,13 @@
 
 A fully functional, intent-based chatbot built from the ground up using only **NumPy**. This project demonstrates a fundamental understanding of neural networks by implementing the entire training process, including **backpropagation**, without the use of high-level deep learning frameworks like PyTorch or TensorFlow.
 
-## 🎯 About The Project
+## About The Project
 
 This project is a command-line chatbot created to showcase the core mechanics of Natural Language Processing and Deep Learning. The bot can understand user intent based on a predefined dataset (`intents.json`) and provide a relevant, randomized response.
 
 The key feature of this project is that the feedforward neural network that powers the bot is written entirely from scratch. This includes data preprocessing, the forward pass, cross-entropy loss calculation, and the complete backpropagation algorithm for training.
 
-## ✨ Features
+## Features
 
 The chatbot is trained to recognize and respond to a variety of intents, including:
 * Greetings and Goodbyes
@@ -21,7 +21,7 @@ The chatbot is trained to recognize and respond to a variety of intents, includi
 * Handling of simple insults and praise
 * Recognizing user emotions (happy/sad)
 
-## 🧠 How It Works
+## How It Works
 
 1.  **Data Preprocessing:** The text from `intents.json` is tokenized, stemmed, and converted into a vocabulary. Each sentence is then transformed into a **Bag-of-Words** vector.
 2.  **Neural Network Architecture:** The model is a simple feedforward neural network with one hidden layer:
@@ -31,13 +31,13 @@ The chatbot is trained to recognize and respond to a variety of intents, includi
 3.  **Training:** The network is trained for 5000 epochs using **Stochastic Gradient Descent (SGD)** and a custom-coded **backpropagation** algorithm to minimize the cross-entropy loss.
 4.  **Inference:** The live chat script (`chat.py`) takes a user's sentence, converts it into a Bag-of-Words vector, and performs a forward pass through the trained network to get the intent probabilities and select the best response.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * [Python](https://www.python.org/)
 * [NumPy](https://numpy.org/) - For all numerical operations and the neural network implementation.
 * [NLTK](https://www.nltk.org/) - For natural language processing tasks like tokenization and stemming.
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these instructions to get a local copy up and running.
 
